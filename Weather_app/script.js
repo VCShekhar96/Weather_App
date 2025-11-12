@@ -1,6 +1,6 @@
 async function getWeather() {
     const city = document.getElementById('city-input').value;
-    const apiKey = '28526d79e7385de7595557dbda0b175f'; // Replace with your OpenWeatherMap API key
+    const apiKey = ' Replace with your OpenWeatherMap API key'; // Replace with your OpenWeatherMap API key
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
     try {
@@ -14,3 +14,4 @@ async function getWeather() {
         alert('City not found. Please try again.');
     }
 }
+
