@@ -2,7 +2,7 @@
 
 A clean and responsive **Weather Application** built using **HTML, CSS, and JavaScript**, which fetches live weather data using the **OpenWeatherMap API**.  
 This project provides real-time weather information such as temperature, humidity, wind speed, and weather conditions for any searched city.
-
+Link: https://weather-app-cs.tiiny.site/
 ---
 
 ## 🚀 Features
