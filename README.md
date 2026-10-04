@@ -1,104 +1,70 @@
-# 🌦️ Weather App
+# Weather App
 
-A clean and responsive **Weather Application** built using **HTML, CSS, and JavaScript**, which fetches live weather data using the **OpenWeatherMap API**.  
-This project provides real-time weather information such as temperature, humidity, wind speed, and weather conditions for any searched city.
-Link: https://weather-app-cs.tiiny.site/
----
+A lightweight web application built with **HTML, CSS, and JavaScript** for displaying weather information from a weather API.
 
-## 🚀 Features
+## Features
 
-- Real-time weather updates via **OpenWeatherMap API**
-- Displays city name, temperature, weather condition, humidity, and wind speed
-- Responsive and modern UI
-- Error handling for invalid city names
-- Automatically detects user’s location (optional)
+- 🌦️ Search weather by city
+- 🌡️ Temperature display
+- 💧 Humidity information
+- 🌬️ Wind information
+- ⚠️ Basic invalid-location/error handling
+- 📱 Responsive browser interface
 
----
+## Tech Stack
 
-## 🧩 Tech Stack
+- HTML5
+- CSS3
+- JavaScript
+- OpenWeatherMap API
 
-- **HTML5** – structure  
-- **CSS3** – styling and responsive design  
-- **JavaScript (ES6)** – API integration and logic  
-- **OpenWeatherMap API** – live weather data source  
+## Getting Started
 
----
+### 1. Clone
 
-## ⚙️ Installation & Setup
-
-Follow these simple steps to run the project locally:
-
-### 1️⃣ Clone the repository
 ```bash
 git clone https://github.com/VCShekhar96/Weather_App.git
-2️⃣ Navigate to the project folder
-bash
-Copy code
 cd Weather_App
-3️⃣ Open the project
-You can directly open index.html in your browser, OR use a local web server (recommended):
+```
 
-Using VS Code Live Server:
+### 2. Configure the API
 
-Install the Live Server extension.
+Create or configure the API key according to the JavaScript implementation.
 
-Right-click index.html → Open with Live Server.
+Use a placeholder in documentation or local configuration:
 
-🔑 API Configuration
-Visit OpenWeatherMap
+```text
+YOUR_WEATHER_API_KEY
+```
 
-Sign up and get your API key.
+**Never commit a real API key to GitHub.**
 
-In your JavaScript file (e.g., script.js), replace:
+### 3. Run locally
 
-js
-Copy code
-const API_KEY = "your_api_key_here";
-with your actual key:
+Open the HTML entry point through a local development server. For example, VS Code Live Server can be used for a simple static deployment.
 
-js
-Copy code
-const API_KEY = "abcd1234example";
-▶️ Running the App
-After setting the API key, open the index.html file in your browser.
+## Project Structure
 
-Enter a city name in the input box and click Search.
-
-The app displays:
-
-🌡️ Temperature
-
-💧 Humidity
-
-🌬️ Wind Speed
-
-🌤️ Weather Condition
-
-🧠 Example Output
-City: Hyderabad
-Temperature: 28°C
-Condition: Cloudy
-Humidity: 68%
-Wind Speed: 10 km/h
-
-🛠️ Folder Structure
-bash
-Copy code
+```text
 Weather_App/
-│
-├── index.html           # Main HTML file
-├── style.css            # Styling
-├── script.js            # Weather API logic
-├── assets/              # (optional) icons and images
-└── README.md            # Documentation
-🧾 Additional Notes
-If API requests fail, verify your API key and network access.
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+```
 
-Free OpenWeatherMap API allows 60 requests/minute; consider upgrading if needed.
+## Deployment
 
-You can enhance the UI with animations or charts using Chart.js.
+A static hosting provider can be used to deploy the frontend. Keep API credentials out of the repository and use a secure configuration strategy appropriate to the API and deployment platform.
 
-👨‍💻 Author
-V Chandrashekhar
-🔗 LinkedIn
-🧠 Passionate about AI, Web Development, and Cloud Integration
+## Future Improvements
+
+- Improve API error states and loading feedback.
+- Add weather forecasts and additional locations.
+- Improve accessibility and keyboard navigation.
+- Add automated UI tests.
+- Move API access behind a backend service if the API key must remain confidential.
+
+## Security
+
+Client-side API keys can be exposed to users. If the API provider does not support safely restricted browser keys, route requests through a backend instead.
